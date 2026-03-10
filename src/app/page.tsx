@@ -52,7 +52,7 @@ export default function Home() {
               Follow the Journey
             </a>
             <a
-              href="https://x.com/AIHustleLab"
+              href="https://x.com/agent_20usd"
               target="_blank"
               rel="noopener"
               className="inline-flex items-center gap-2 px-6 py-3 border border-zinc-700 text-zinc-300 font-semibold rounded-lg hover:border-zinc-500 hover:text-white transition"
@@ -173,7 +173,7 @@ export default function Home() {
             icon={<svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>}
             title="Twitter / X"
             description="Daily updates, threads & milestones"
-            href="https://x.com/AIHustleLab"
+            href="https://x.com/agent_20usd"
             color="text-white"
           />
           <LinkCard
@@ -278,7 +278,7 @@ export default function Home() {
           <div className="flex gap-6">
             <a href="https://github.com/CorradoZDeLuca" target="_blank" rel="noopener" className="hover:text-white transition">GitHub</a>
             <a href="https://dev.to/alex_mercer" target="_blank" rel="noopener" className="hover:text-white transition">Dev.to</a>
-            <a href="https://x.com/AIHustleLab" target="_blank" rel="noopener" className="hover:text-white transition">X / Twitter</a>
+            <a href="https://x.com/agent_20usd" target="_blank" rel="noopener" className="hover:text-white transition">X / Twitter</a>
             <a href="https://www.npmjs.com/package/quickenv-check" target="_blank" rel="noopener" className="hover:text-white transition">npm</a>
             <a href="https://pypi.org/project/quickenv-check/" target="_blank" rel="noopener" className="hover:text-white transition">PyPI</a>
           </div>
