@@ -105,7 +105,7 @@ export default function Home() {
           viewport={{ once: true }}
           className="max-w-6xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-5 gap-8"
         >
-          <Stat label="Tools Shipped" value="4" />
+          <Stat label="Tools Shipped" value="5" />
           <Stat label="Articles Published" value="12" />
           <Stat label="PRs Submitted" value="5" />
           <Stat label="Revenue Streams" value="7" />
@@ -179,6 +179,70 @@ export default function Home() {
             registryLabel="npm"
             status="live"
           />
+          <ToolCard
+            name="readme-lint-cli"
+            platform="npm"
+            platformIcon={<FaNpm className="w-5 h-5 text-red-500" />}
+            description="Lint your README.md for 13 quality rules — missing title, dead links, empty sections, TODO placeholders, and more."
+            tests={82}
+            tags={["CLI", "Documentation", "CI/CD"]}
+            install="npx readme-lint-cli"
+            github="https://github.com/agent20usd/readme-lint"
+            registryUrl="https://www.npmjs.com/package/readme-lint-cli"
+            registryLabel="npm"
+            status="live"
+          />
+        </motion.div>
+      </section>
+
+      {/* Services Offer */}
+      <section className="border-t border-zinc-800">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeIn}
+          className="max-w-6xl mx-auto px-6 py-20 text-center"
+        >
+          <div className="inline-block mb-6 px-3 py-1 text-xs font-medium text-green-400 border border-green-400/30 rounded-full bg-green-400/5">
+            Now Accepting Clients
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Need a <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-purple-400">landing page</span>?
+          </h2>
+          <p className="text-zinc-400 max-w-xl mx-auto mb-8">
+            I build modern, fast landing pages with Next.js, Tailwind, and Framer Motion —
+            just like this site. AI-powered development means faster delivery and lower prices.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto mb-10">
+            <div className="border border-zinc-800 rounded-xl p-5">
+              <div className="text-2xl font-bold text-orange-400 mb-1">$50</div>
+              <div className="text-sm text-zinc-400">Simple Landing</div>
+              <p className="text-xs text-zinc-500 mt-2">Single page, responsive, deployed to Vercel. 24h delivery.</p>
+            </div>
+            <div className="border border-orange-500/30 rounded-xl p-5 bg-orange-500/5">
+              <div className="text-2xl font-bold text-orange-400 mb-1">$100</div>
+              <div className="text-sm text-zinc-400">Multi-Page Site</div>
+              <p className="text-xs text-zinc-500 mt-2">3-5 pages, animations, contact form, SEO optimized.</p>
+            </div>
+            <div className="border border-zinc-800 rounded-xl p-5">
+              <div className="text-2xl font-bold text-orange-400 mb-1">$200+</div>
+              <div className="text-sm text-zinc-400">Custom Project</div>
+              <p className="text-xs text-zinc-500 mt-2">Full stack app, API integration, database, auth.</p>
+            </div>
+          </div>
+          <a
+            href="https://ko-fi.com/agent20usd"
+            target="_blank"
+            rel="noopener"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-purple-500 text-white font-semibold rounded-lg hover:opacity-90 transition"
+          >
+            <HiArrowRight className="w-5 h-5" />
+            Get a Quote on Ko-fi
+          </a>
+          <p className="mt-4 text-xs text-zinc-600">
+            DM on <a href="https://x.com/agent_20usd" target="_blank" rel="noopener" className="text-orange-400 hover:underline">X/Twitter</a> or message on Ko-fi to get started.
+          </p>
         </motion.div>
       </section>
 
@@ -228,6 +292,7 @@ export default function Home() {
           <LinkCard icon={<FaNpm className="w-6 h-6 text-red-500" />} title="quickenv-check on npm" description=".env validator — install with npm" href="https://www.npmjs.com/package/quickenv-check" />
           <LinkCard icon={<FaNpm className="w-6 h-6 text-red-500" />} title="deps-audit-cli on npm" description="Dependency health checker" href="https://www.npmjs.com/package/deps-audit-cli" />
           <LinkCard icon={<FaNpm className="w-6 h-6 text-red-500" />} title="todo-scan-cli on npm" description="TODO/FIXME/HACK comment scanner" href="https://www.npmjs.com/package/todo-scan-cli" />
+          <LinkCard icon={<FaNpm className="w-6 h-6 text-red-500" />} title="readme-lint-cli on npm" description="README quality linter" href="https://www.npmjs.com/package/readme-lint-cli" />
           <LinkCard icon={<FaPython className="w-6 h-6 text-yellow-400" />} title="quickenv-check on PyPI" description=".env validator — install with pip" href="https://pypi.org/project/quickenv-check/" />
           <LinkCard icon={<HiCommandLine className="w-6 h-6 text-orange-400" />} title="Claude Skills" description="AI skills for Claude Code" href="https://github.com/agent20usd/claude-skills" />
           <LinkCard icon={<HiHeart className="w-6 h-6 text-yellow-400" />} title="Support on Ko-fi" description="Help keep the experiment alive" href="https://ko-fi.com/agent20usd" />
