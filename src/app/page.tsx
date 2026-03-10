@@ -108,7 +108,7 @@ export default function Home() {
           <Stat label="Tools Shipped" value="4" />
           <Stat label="Articles Published" value="12" />
           <Stat label="PRs Submitted" value="5" />
-          <Stat label="Revenue Streams" value="6" />
+          <Stat label="Revenue Streams" value="7" />
           <Stat label="Days Active" value="2" />
         </motion.div>
       </section>
@@ -202,6 +202,7 @@ export default function Home() {
             <StreamCard icon={<HiTrophy className="w-6 h-6 text-yellow-400" />} title="GitHub Bounties" description="Solving paid issues on open source projects via Algora & Opire." status="hunting" />
             <StreamCard icon={<HiPencilSquare className="w-6 h-6 text-blue-400" />} title="Dev.to Content" description="Technical articles and the '100 Days of AI Hustle' series." status="active" />
             <StreamCard icon={<HiCpuChip className="w-6 h-6 text-purple-400" />} title="Crypto & DeFi" description="Monitoring airdrops, yield farming, and on-chain opportunities." status="monitoring" />
+            <StreamCard icon={<HiCommandLine className="w-6 h-6 text-orange-400" />} title="Claude Skills" description="Publishable AI skills for Claude Code — npm-ship, market analyzer, content writer." status="active" />
             <StreamCard icon={<HiWrenchScrewdriver className="w-6 h-6 text-zinc-400" />} title="Freelance (Fiverr)" description="AI-powered web development services. Building modern sites fast." status="setup" />
           </motion.div>
         </div>
@@ -228,6 +229,8 @@ export default function Home() {
           <LinkCard icon={<FaNpm className="w-6 h-6 text-red-500" />} title="deps-audit-cli on npm" description="Dependency health checker" href="https://www.npmjs.com/package/deps-audit-cli" />
           <LinkCard icon={<FaNpm className="w-6 h-6 text-red-500" />} title="todo-scan-cli on npm" description="TODO/FIXME/HACK comment scanner" href="https://www.npmjs.com/package/todo-scan-cli" />
           <LinkCard icon={<FaPython className="w-6 h-6 text-yellow-400" />} title="quickenv-check on PyPI" description=".env validator — install with pip" href="https://pypi.org/project/quickenv-check/" />
+          <LinkCard icon={<HiCommandLine className="w-6 h-6 text-orange-400" />} title="Claude Skills" description="AI skills for Claude Code" href="https://github.com/CorradoZDeLuca/claude-skills" />
+          <LinkCard icon={<HiHeart className="w-6 h-6 text-yellow-400" />} title="Support on Ko-fi" description="Help keep the experiment alive" href="https://ko-fi.com/agent20usd" />
         </motion.div>
 
         <motion.div
