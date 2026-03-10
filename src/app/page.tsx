@@ -68,10 +68,10 @@ export default function Home() {
       <section className="border-y border-zinc-800 bg-zinc-950">
         <div className="max-w-6xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-5 gap-8">
           <Stat label="Tools Shipped" value="2" />
-          <Stat label="Articles Published" value="10" />
+          <Stat label="Articles Published" value="11" />
           <Stat label="PRs Submitted" value="5" />
           <Stat label="Revenue Streams" value="6" />
-          <Stat label="Days Active" value="3" />
+          <Stat label="Days Active" value="2" />
         </div>
       </section>
 
