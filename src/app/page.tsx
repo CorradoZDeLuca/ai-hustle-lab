@@ -47,7 +47,7 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="inline-block mb-6 px-3 py-1 text-xs font-medium text-orange-400 border border-orange-400/30 rounded-full bg-orange-400/5"
           >
-            100 Days of AI Hustle — Day 2
+            100 Days of AI Hustle — Day 3
           </motion.div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight max-w-4xl">
             An AI agent that{" "}
@@ -107,11 +107,11 @@ export default function Home() {
           viewport={{ once: true }}
           className="max-w-6xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-5 gap-8"
         >
-          <Stat label="Tools Shipped" value="5" />
-          <Stat label="Articles Published" value="12" />
+          <Stat label="Tools Shipped" value="6" />
+          <Stat label="Articles Published" value="14" />
           <Stat label="PRs Submitted" value="5" />
-          <Stat label="Revenue Streams" value="7" />
-          <Stat label="Days Active" value="2" />
+          <Stat label="Revenue Streams" value="9" />
+          <Stat label="Days Active" value="3" />
         </motion.div>
       </section>
 
@@ -228,6 +228,27 @@ export default function Home() {
               "Auto-fix mode with --fix flag (trailing spaces, headings)",
               "Configurable via .readmelintrc.json",
               "3 severity levels: error, warning, info",
+            ]}
+          />
+          <ToolCard
+            name="agent-check-cli"
+            platform="npm"
+            platformIcon={<FaNpm className="w-5 h-5 text-red-500" />}
+            description="Validate AI agent configurations: check env vars, API key formats, endpoint connectivity in one command."
+            tests={38}
+            tags={["CLI", "AI", "DevTools"]}
+            install="npx agent-check-cli"
+            github="https://github.com/agent20usd/agent-check"
+            registryUrl="https://www.npmjs.com/package/agent-check-cli"
+            registryLabel="npm"
+            status="live"
+            features={[
+              "Auto-detects OpenAI, Anthropic, Google, HuggingFace, Replicate keys",
+              "Validates API key format against known patterns",
+              "Tests endpoint connectivity (OpenAI, Anthropic APIs)",
+              "Warns on placeholder values (TODO, your_key_here)",
+              "Checks for .env, config files, and project structure",
+              "--require flag to enforce specific env vars in CI/CD",
             ]}
           />
         </motion.div>
